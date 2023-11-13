@@ -1,0 +1,29 @@
+Vamos criar duas árvores binárias de busca (BST - Binary Search Trees) usando as listas fornecidas. Em seguida, adicionaremos um valor a cada árvore e removeremos outro, garantindo que, pelo menos em uma das árvores, a remoção seja de um nó com dois filhos.
+
+Vamos lá:
+
+### Árvore 1 (Lista1)
+```plaintext
+              45
+            /    \
+          20      60
+         /  \    /   \
+        7   30  81    97
+       / \         /
+      4   8       100
+```
+- Adição: Adicionaremos o valor 25.
+- Remoção: Vamos remover o valor 20 (nó com dois filhos).
+
+### Árvore 2 (Lista2)
+```plaintext
+              15
+            /    \
+          6      18
+         / \    /   \
+        3   7  16    20
+```
+- Adição: Adicionaremos o valor 10.
+- Remoção: Vamos remover o valor 15 (nó com dois filhos).
+
+Lembrando que a árvore binária de busca é uma estrutura de dados que mantém a propriedade de que, para cada nó, os valores menores estão à esquerda e os valores maiores estão à direita. Portanto, ao adicionar e remover valores, a estrutura da árvore é ajustada para manter essa propriedade. A remoção de um nó com dois filhos envolve estratégias específicas para garantir que a árvore continue sendo uma BST após a remoção.
