@@ -1,0 +1,21 @@
+import React, { useState } from 'react';
+
+const MeuComponente = () => {
+  // Defina o estado local para armazenar a propriedade
+  const [contador, setContador] = useState(0);
+
+  // Função para aumentar o valor da propriedade
+  const aumentarContador = () => {
+    setContador(contador + 1);
+  };
+
+  return (
+    <div>
+      <p>Valor da Propriedade: {contador}</p>
+      {/* Botão que chama a função para aumentar o valor da propriedade */}
+      <button onClick={aumentarContador}>Aumentar</button>
+    </div>
+  );
+};
+
+export default MeuComponente;
