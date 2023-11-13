@@ -1,0 +1,37 @@
+
+1. **Crie o componente filho:**
+   ```jsx
+   // MeuComponente.js
+
+   import React from 'react';
+
+   const MeuComponente = (props) => {
+     return (
+       <div>
+         <p>Olá, {props.nome}!</p>
+       </div>
+     );
+   };
+
+   export default MeuComponente;
+   ```
+
+2. **Use o componente pai:**
+   ```jsx
+   // App.js
+
+   import React from 'react';
+   import MeuComponente from './MeuComponente';
+
+   const App = () => {
+     return (
+       <div>
+         <h1>Meu Aplicativo React</h1>
+         <MeuComponente nome="SeuNome" />
+       </div>
+     );
+   };
+
+   export default App;
+   ```
+
