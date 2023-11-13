@@ -1,0 +1,44 @@
+
+1. Crie a pasta `utils` e o arquivo `mensagem.js`:
+
+```bash
+cd src
+mkdir utils
+touch utils/mensagem.js
+```
+
+2. Abra o arquivo `mensagem.js` e insira o seguinte código:
+
+```jsx
+// src/utils/mensagem.js
+export default function obterMensagem() {
+  return 'Bem-vindo ao meu aplicativo React!';
+}
+```
+
+3. Agora, abra o arquivo `App.js` e importe a função `obterMensagem` para utilizá-la:
+
+```jsx
+// src/App.js
+import React from 'react';
+import './App.css';
+import obterMensagem from './utils/mensagem';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>
+          {obterMensagem()}
+        </p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+4. Ao acessar `http://localhost:3000/`, você verá a mensagem "Bem-vindo ao meu aplicativo React!".
+
+Lembre-se de adaptar conforme necessário, incluindo o seu nome ou outras mensagens. Após fazer essas alterações, salve os arquivos e anexe-os à atividade.
